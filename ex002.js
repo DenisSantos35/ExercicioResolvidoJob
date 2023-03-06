@@ -8,14 +8,14 @@ function sequenciaFibonaci(valor,usuario){
     console.log(n1)
     for(let i of n1){
         if(usuario === i){
-            return true
+            return `O valor ${usuario} esta na sequencia de fibonacci`
         }
     }
-    return false;
+    return `O valor ${usuario} não esta na sequencia de fibonacci`;
     
 }
 
-let usuario = 1300;
+let usuario = 4;
 let valor = usuario * 2;
 console.log(sequenciaFibonaci(valor, usuario))
 
